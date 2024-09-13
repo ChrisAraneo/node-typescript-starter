@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node dist/index.js",
+    "lint": "eslint \"src/**/*.ts,json}\" --fix",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.spec.ts\" \"src/**/*.json\"",
     "test": "jest",
     "build": "tsup src/**/*.ts"
