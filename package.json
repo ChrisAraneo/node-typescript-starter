@@ -19,7 +19,7 @@
     "ts",
     "esbuild"
   ],
-  "author": "Krzysztof Pająk <chris.araneo@gmail.com>",
+  "author": "Krzysztof Pająk (Chris Araneo) <chris.araneo@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ChrisAraneo/node-typescript-starter/issues"
