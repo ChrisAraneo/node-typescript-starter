@@ -15,5 +15,6 @@ export default tseslint.config(
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
     },
+    ignores: ['**/node_modules/', '.git/', 'package.json', 'package-lock.json'],
   },
 );
