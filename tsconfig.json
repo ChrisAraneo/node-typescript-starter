@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "allowUnreachableCode": true,
     "esModuleInterop": true,
-    "target": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "outDir": "dist",
     "sourceMap": true,
-    "outDir": "dist"
+    "target": "es6"
   },
   "lib": ["es2015"]
 }
