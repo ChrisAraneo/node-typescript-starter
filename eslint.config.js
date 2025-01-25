@@ -1,10 +1,12 @@
-// @ts-check
-import eslint from '@eslint/js';
-import eslintPluginJsonc from 'eslint-plugin-jsonc';
-import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import tseslint from 'typescript-eslint';
+/* eslint-disable @typescript-eslint/no-require-imports */
+/* eslint-disable no-undef */
 
-export default tseslint.config(
+const eslint = require('@eslint/js');
+const eslintPluginJsonc = require('eslint-plugin-jsonc');
+const simpleImportSort = require('eslint-plugin-simple-import-sort');
+const tseslint = require('typescript-eslint');
+
+module.exports = tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
@@ -19,13 +21,17 @@ export default tseslint.config(
       'jsonc/no-comments': 'error',
       'jsonc/sort-keys': 'error',
     },
+  },
+  {
     ignores: [
-      '**/node_modules/',
-      '.git/',
+      '.git',
+      '.stryker-tmp',
+      'dist',
+      'node_modules',
+      'reports',
+      'coverage',
       'package.json',
       'package-lock.json',
-      'reports/',
-      '.stryker-tmp/',
     ],
   },
 );
