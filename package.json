@@ -24,7 +24,7 @@
   "scripts": {
     "build": "tsup src/**/*.ts",
     "chores": "npm run lint && npm run format",
-    "format": "sort-package-json && prettier --write \"**/*.{ts,js,json}\" && node sort-pattern-files .gitignore .prettierignore",
+    "format": "sort-package-json && prettier --write \"**/*.{ts,js,json}\" && node scripts/sort-pattern-files .gitignore .prettierignore",
     "lint": "eslint --fix",
     "start": "npm run build && node dist/index.js",
     "stryker": "npx stryker run",
