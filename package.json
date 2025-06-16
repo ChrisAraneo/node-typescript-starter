@@ -1,6 +1,6 @@
 {
   "name": "node-typescript-starter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "keywords": [
     "nodejs",
@@ -24,15 +24,18 @@
   "scripts": {
     "build": "tsup src/**/*.ts",
     "chores": "npm run lint && npm run format",
-    "format": "sort-package-json && prettier --write \"**/*.{ts,js,json}\" && node scripts/sort-pattern-files .gitignore .prettierignore",
+    "format": "sort-package-json && prettier --write \"**/*.{ts,js,mjs,json}\" && sort-patterns-file .gitignore .prettierignore",
     "lint": "eslint --fix",
     "start": "npm run build && node dist/index.js",
     "stryker": "npx stryker run",
     "test": "jest"
   },
   "devDependencies": {
+    "@chris.araneo/eslint-config": "0.0.45",
+    "@chris.araneo/sort-patterns-file": "0.0.9",
     "@stryker-mutator/jest-runner": "^8.6.0",
     "@stryker-mutator/typescript-checker": "^8.6.0",
+    "@swc/core": "^1.12.1",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.9.0",
     "@typescript-eslint/eslint-plugin": "^8.14.0",

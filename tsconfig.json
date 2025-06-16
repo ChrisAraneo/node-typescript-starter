@@ -8,6 +8,7 @@
     "noUnusedParameters": false,
     "outDir": "dist",
     "sourceMap": true,
+    "strictNullChecks": true,
     "target": "es6"
   },
   "lib": ["es2015"]
