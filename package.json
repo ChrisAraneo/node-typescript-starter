@@ -22,7 +22,7 @@
   "author": "Krzysztof Pająk (Chris Araneo) <chris.araneo@gmail.com>",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "chores": "npm run lint:fix && npm run format",
     "format": "sort-package-json && prettier --write \"**/*.{ts,js,mjs,json}\" && sort-patterns-file .gitignore .prettierignore",
     "lint": "eslint",
