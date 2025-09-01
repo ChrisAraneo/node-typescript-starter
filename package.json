@@ -1,22 +1,15 @@
 {
-  "name": "node-typescript-starter",
-  "version": "0.0.7",
+  "name": "web-scraper",
+  "version": "0.0.1",
   "description": "",
-  "keywords": [
-    "nodejs",
-    "typescript",
-    "modern",
-    "starter",
-    "ts",
-    "esbuild"
-  ],
-  "homepage": "https://github.com/ChrisAraneo/node-typescript-starter#readme",
+  "keywords": [],
+  "homepage": "https://github.com/ChrisAraneo/web-scraper#readme",
   "bugs": {
-    "url": "https://github.com/ChrisAraneo/node-typescript-starter/issues"
+    "url": "https://github.com/ChrisAraneo/web-scraper/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisAraneo/node-typescript-starter.git"
+    "url": "git+https://github.com/ChrisAraneo/web-scraper.git"
   },
   "license": "MIT",
   "author": "Krzysztof Pająk (Chris Araneo) <chris.araneo@gmail.com>",
