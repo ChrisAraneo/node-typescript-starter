@@ -11,5 +11,7 @@
     "strictNullChecks": true,
     "target": "es6"
   },
+  "exclude": ["src/**/*.spec.ts"],
+  "include": ["src/**/*.ts"],
   "lib": ["es2015"]
 }
